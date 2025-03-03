@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Filtros en CSS</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+
+  </head>
+  <body>
+            <!-- Barra de navegación -->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+              <div class="container">
+                <a class="navbar-brand" href="#">Filtros en CSS</a>
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarNav"
+                  aria-controls="navbarNav"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                      <a class="nav-link" href="dashboard.html">Admin</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="dashboard.html">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="usuarios.html">Usuarios</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="publicaciones.html">Publicaciones</a>
+                    </li>
+    
+                  </ul>
+                </div>
+              </div>
+            </nav>
+
+    <!-- Header -->
+    <header class="bg-secondary text-white text-center py-5">
+      <h1>🖼️ Filtros en CSS</h1>
+      <p>
+        Aprende a modificar imágenes con efectos visuales usando filtros en CSS.
+      </p>
+    </header>
+
+    <!-- Blog Content -->
+    <div class="container my-5">
+      <div class="row">
+        <!-- Main Content -->
+        <div class="col-lg-8">
+          <article class="mb-4">
+            <h2>🖼️ ¿Qué son los filtros en CSS?</h2>
+            <img
+              class="rounded mb-4 mt-4"
+              src="assets/imgs/filter.jpeg"
+              alt="imagen con filtros css"
+            />
+            <p>
+              Los filtros en CSS permiten aplicar efectos visuales a elementos
+              HTML, como imágenes, videos y fondos. Con ellos, puedes modificar
+              el brillo, contraste, saturación, desenfoque y otros aspectos
+              visuales de un elemento.
+            </p>
+            <p>Algunas de las propiedades más comunes incluyen:</p>
+            <ul>
+              <li>
+                <strong>brightness:</strong> Ajusta el brillo de la imagen.
+              </li>
+              <li><strong>contrast:</strong> Cambia el nivel de contraste.</li>
+              <li>
+                <strong>grayscale:</strong> Convierte la imagen a escala de
+                grises.
+              </li>
+              <li>
+                <strong>sepia:</strong> Aplica un tono sepia para un efecto
+                vintage.
+              </li>
+              <li><strong>blur:</strong> Aplica un desenfoque a la imagen.</li>
+            </ul>
+          </article>
+
+          <article class="mb-4 filter-example">
+            <h2>📌 Ejemplos de Filtros CSS</h2>
+            <p>Visualuzar pasando el puntero por encima de la imagen</p>
+            <div class="row">
+              <div class="col-md-3 text-center">
+                <p>Brillo</p>
+                <img
+                  class="filter-brightness rounded"
+                  src="assets/imgs/rosa.png"
+                  alt="Ejemplo Brillo"
+                />
+              </div>
+              <div class="col-md-3 text-center">
+                <p>Contraste</p>
+                <img
+                  class="filter-contrast rounded"
+                  src="assets/imgs/rosa.png"
+                  alt="Ejemplo Contraste"
+                />
+              </div>
+              <div class="col-md-3 text-center">
+                <p>Escala de Grises</p>
+                <img
+                  class="filter-grayscale rounded"
+                  src="assets/imgs/rosa.png"
+                  alt="Ejemplo Grayscale"
+                />
+              </div>
+              <div class="col-md-3 text-center">
+                <p>Sepia</p>
+                <img
+                  class="filter-sepia rounded"
+                  src="assets/imgs/rosa.png"
+                  alt="Ejemplo Sepia"
+                />
+              </div>
+              <div class="col-md-3 text-center">
+                <p>Desenfoque</p>
+                <img
+                  class="filter-blur rounded"
+                  src="assets/imgs/rosa.png"
+                  alt="Ejemplo Blur"
+                />
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Sidebar -->
+        <aside class="col-lg-4">
+          <div class="p-4 bg-light rounded ">
+            <h4>📌 Resumen rápido</h4>
+            <ul>
+              <li><strong>brightness:</strong> Aumenta o reduce el brillo.</li>
+              <li>
+                <strong>contrast:</strong> Modifica el contraste de la imagen.
+              </li>
+              <li>
+                <strong>grayscale:</strong> Convierte la imagen a blanco y
+                negro.
+              </li>
+              <li>
+                <strong>sepia:</strong> Da un efecto envejecido a la imagen.
+              </li>
+              <li><strong>blur:</strong> Aplica un desenfoque suave.</li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-start py-3">
+      <p>&copy; 2025 María López - Filtros en CSS</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

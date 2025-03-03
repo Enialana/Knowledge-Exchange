@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Propiedades CSS para Imágenes</title>
+    <!-- hojas de estilo -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- vincular bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+           <!-- Barra de navegación -->
+           <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+              <a class="navbar-brand" href="#">Propiedades CSS en img</a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="dashboard.html">Admin</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="dashboard.html">Dashboard</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="usuarios.html">Usuarios</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="publicaciones.html">Publicaciones</a>
+                  </li>
+  
+                </ul>
+              </div>
+            </div>
+          </nav>
+    <!-- Header -->
+    <header class="bg-secondary text-white text-center py-5">
+      <h1>🎨 Propiedades CSS para Imágenes</h1>
+    </header>
+
+    <!-- Blog Content -->
+    <div class="container my-5">
+      <div class="row">
+        <!-- Main Content -->
+        <div class="col-lg-8">
+          <article class="mb-4">
+            <h2>🎨 Uso de background-image y sus propiedades</h2>
+            <img
+              src="assets/imgs/bg.jpeg"
+              width="400px"
+              alt="imagen de propiedades css"
+            />
+            <p>
+              La propiedad <code>background-image</code> permite establecer una
+              imagen de fondo en un elemento HTML. Se puede personalizar con
+              varias propiedades asociadas para controlar su visualización:
+            </p>
+            <ul>
+              <li>
+                <strong>background-size:</strong> Define cómo se ajusta la
+                imagen dentro del contenedor. Valores comunes incluyen:
+                <ul>
+                  <li>
+                    <code>cover</code>: La imagen cubre completamente el
+                    elemento, recortando si es necesario.
+                  </li>
+                  <li>
+                    <code>contain</code>: La imagen se ajusta al tamaño del
+                    contenedor sin recortar.
+                  </li>
+                  <li>
+                    Valores en <code>px</code> o <code>%</code> también permiten
+                    ajustes personalizados.
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <strong>background-position:</strong> Define la ubicación de la
+                imagen de fondo dentro del elemento. Puede tomar valores como
+                <code>center</code>, <code>top</code>, <code>bottom</code>,
+                <code>left</code>, <code>right</code>, o valores específicos en
+                <code>px</code> o <code>%</code>.
+              </li>
+              <li>
+                <strong>background-attachment:</strong> Determina si la imagen
+                se desplaza con el contenido o permanece fija:
+                <ul>
+                  <li>
+                    <code>scroll</code>: La imagen se mueve con la página.
+                  </li>
+                  <li>
+                    <code>fixed</code>: La imagen permanece en su lugar mientras
+                    el contenido se desplaza.
+                  </li>
+                  <li>
+                    <code>local</code>: La imagen se desplaza solo con el
+                    contenido del elemento.
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </article>
+
+          <article class="mb-4 object-fit-example">
+            <h2>📏 Uso de object-fit y object-position</h2>
+            <img class="rounded m-3" width="350px"  src="assets/imgs/object-fit.jpeg" alt="Ejemplo Object Fit" />
+            <p>
+              La propiedad <code>object-fit</code> se usa en elementos
+              <code>&lt;img&gt;</code> y <code>&lt;video&gt;</code> para
+              controlar cómo la imagen se ajusta dentro de su contenedor sin
+              afectar su tamaño real:
+            </p>
+            <ul>
+                <li>
+                    <strong>fill:</strong> La imagen se estira para ajustarse
+                    completamente al contenedor.
+                  </li>
+              <li>
+                <strong>cover:</strong> La imagen se escala para llenar
+                completamente el contenedor, recortando si es necesario.
+              </li>
+              <li>
+                <strong>contain:</strong> La imagen se ajusta dentro del
+                contenedor sin recortarse.
+              </li>
+              
+              <li>
+                <strong>none:</strong> La imagen mantiene su tamaño original sin
+                ajustes.
+              </li>
+              <li>
+                <strong>scale-down:</strong> Usa el menor tamaño entre
+                <code>none</code> y <code>contain</code>.
+              </li>
+            </ul>
+            <p>
+              Además, la propiedad <code>object-position</code> permite definir
+              qué parte de la imagen se muestra cuando se usa
+              <code>object-fit</code>. Sus valores son similares a
+              <code>background-position</code>, como <code>center</code>,
+              <code>top left</code>, o coordenadas específicas.
+            </p>
+          </article>
+        </div>
+
+        <!-- Sidebar -->
+        <aside class="col-lg-4">
+          <div class="p-4 bg-light rounded">
+            <h4>📌 Resumen rápido</h4>
+            <ul>
+              <li>
+                <strong>background-image:</strong> Establece una imagen de
+                fondo.
+              </li>
+              <li>
+                <strong>background-size:</strong> Controla el ajuste de la
+                imagen.
+              </li>
+              <li>
+                <strong>background-position:</strong> Define la posición de la
+                imagen.
+              </li>
+              <li>
+                <strong>background-attachment:</strong> Determina si la imagen
+                se desplaza.
+              </li>
+              <li>
+                <strong>object-fit:</strong> Ajusta imágenes dentro de etiquetas
+                <code>&lt;img&gt;</code>.
+              </li>
+              <li>
+                <strong>object-position:</strong> Define la parte visible de la
+                imagen.
+              </li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-start py-3">
+      <p>&copy; 2025 Pedro García - Propiedades CSS para Imágenes</p>
+    </footer>
+<!-- vincular js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

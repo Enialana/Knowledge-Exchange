@@ -1,0 +1,161 @@
+
+
+$primary: #212135;
+
+
+$theme-colors: (
+  "primary": $primary,
+
+
+);
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;700&display=swap');
+
+// Cambiar fuente monoespaciada
+$font-family-monospace: 'Fira Code', monospace;
+
+// Aplicar a todos los elementos
+* {
+    font-family: $font-family-monospace;
+}
+
+
+
+@import "./node_modules/bootstrap/scss/bootstrap";
+
+
+html{
+  height: 100%;
+}
+body{
+display: flex;
+flex-direction: column;
+min-height: 100%;
+color: white;
+
+}
+.chart-container {
+  background: rgba(187, 179, 179, 0.781);
+  padding: 20px;
+  gap: 20px;
+  border-radius: 10px;
+}
+footer{
+  margin-top: auto;
+  padding-left: 20px;
+  min-height: 100%;
+}
+
+.btn-admin {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  transform: translateY(-50%);
+}
+.card {
+    background-color: #212529;
+    border: none;
+    margin: 20px;
+    transition: transform 0.15s ease-in-out;
+}
+.container{
+  padding: 20px ;
+}
+
+.card:hover {
+    transform: scale(1.10);
+}
+
+.back-button {
+  margin-top: 20px;
+}
+
+.user-actions button {
+  margin-right: 10px;
+}
+
+.user-card {
+  border: 1px solid #dee2e6;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.user-card-header {
+  font-weight: bold;
+}
+
+.user-card-body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.user-card-body span {
+  font-size: 16px;
+}
+
+/* Solo sombreado para los usuarios bloqueados */
+.status-blocked {
+  background-color: #e0e0e0; /* Fondo gris claro */
+  color: #888888; /* Texto gris más tenue */
+  opacity: 0.7; /* Opacidad para dar el efecto de bloqueo */
+}
+
+.status-active {
+  color: green;
+}
+
+.status-blocked button {
+  pointer-events: none; /* Desactiva los botones de un usuario bloqueado */
+}
+
+/* Estilo para las publicaciones */
+.publications-list {
+  display: none;
+  margin-top: 10px;
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+.publications-list li {
+  padding: 5px 0;
+}
+
+/* Estilo para esconder el correo en pantallas pequeñas */
+@media (max-width: 768px) {
+  .email {
+      display: none;
+  }
+
+  .view-email {
+      display: block;
+  }
+}
+.accordion-button {
+  background-color: #4b4e52;
+  color: white;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #a9aeaf;
+  color: white;
+}
+
+.accordion-body {
+  background-color: #c1f3ef;
+}
+
+.back-button {
+  margin-top: 20px;
+}
+.filter-example img {
+  width: 100%;
+  max-width: 400px;
+  transition: 0.3s;
+}
+.filter-brightness:hover { filter: brightness(150%); }
+.filter-contrast:hover { filter: contrast(200%); }
+.filter-grayscale:hover { filter: grayscale(100%); }
+.filter-sepia:hover { filter: sepia(100%); }
+.filter-blur:hover { filter: blur(5px); }
